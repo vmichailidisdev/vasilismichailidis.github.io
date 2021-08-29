@@ -30,6 +30,12 @@
   --cyan-500: #15e4da;
 }
 
+::selection {
+  color: var(--navy-blue-500);
+  background: var(--cyan-300);
+  text-shadow: none;
+}
+
 .content {
   color: white;
   background: var(--grey-500);
@@ -145,6 +151,11 @@
 
 .main-content__section__list-item {
   line-height: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.main-content__section__list-item:last-child {
+  margin-bottom: 0;
 }
 
 .main-content__section__date {
@@ -207,11 +218,11 @@
 }
 
 .aside__section__list-item__icon {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .aside__section__list-item__text {
-  padding-left: 1rem;
+  padding-left: 0.75rem;
   display: block;
 }
 
