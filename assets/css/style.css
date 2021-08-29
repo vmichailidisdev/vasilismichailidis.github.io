@@ -49,6 +49,33 @@
   letter-spacing: 0.02rem;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 3rem);
+}
+
+.loader::after {
+  content: '';
+  width: 5rem;
+  height: 5rem;
+  border: 0.5rem solid var(--grey-300);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.loader--hide {
+  display: none;
+}
+
 .header {
   padding: 2rem 1rem;
   display: flex;
@@ -67,13 +94,19 @@
 .header__image-container {
 }
 
+.sr-only {
+  display: none;
+}
+
 .header__image {
-  border: 0.4rem solid white;
+  background: white;
+  background-image: url('../images/vasilis_michailidis.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  border-radius: 50%;
   width: 8rem;
   height: 8rem;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: top center;
 }
 
 .header__title {
