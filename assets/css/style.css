@@ -44,7 +44,7 @@
     var(--grey-500) 0%,
     var(--navy-blue-200) 100%
   );
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 1.5rem 0;
   letter-spacing: 0.02rem;
 }
@@ -57,7 +57,7 @@
 }
 
 .loader::after {
-  content: '';
+  content: "";
   width: 5rem;
   height: 5rem;
   border: 0.5rem solid var(--grey-300);
@@ -100,7 +100,7 @@
 
 .header__image {
   background: white;
-  background-image: url('../images/vasilis_michailidis.jpg');
+  background-image: url("../images/vasilis_michailidis.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -187,12 +187,19 @@
   margin-bottom: 1.5rem;
 }
 
+.main-content__section__short-description {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
 .main-content__section__list-item:last-child {
   margin-bottom: 0;
 }
 
 .main-content__section__date {
   font-style: italic;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
   color: var(--light-blue-200);
 }
 
